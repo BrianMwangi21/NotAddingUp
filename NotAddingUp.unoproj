@@ -1,0 +1,15 @@
+{
+  "RootNamespace":"",
+  "Packages": [
+    "Fuse",
+    "FuseJS"
+  ],
+  "Includes": [
+    "*",
+    "MainView.js:Bundle",
+    "Assets/Roboto.ttf:Bundle",
+    "Assets/LemonMilk.otf:Bundle",
+    "Assets/saveicon.png:Bundle"
+  ]
+}
+

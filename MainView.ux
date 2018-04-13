@@ -1,0 +1,32 @@
+<App Background="White" >
+
+	<JavaScript File="MainView.js" />
+	<StatusBarBackground Dock="Top" />
+	<BottomBarBackground Dock="Bottom" />
+	<Android.StatusBarConfig Color="Black" />
+	<Router ux:Name="router" />
+	<Font File="Assets/Roboto.ttf" ux:Global="roboto" />
+	<Font File="Assets/LemonMilk.otf" ux:Global="lemonmilk" />
+
+	<TextInput ux:Class="MyTextInput" FontSize="15" Font="roboto" PlaceholderColor="#ccc" TextColor="White" Padding="5" Width="250" MaxWidth="250" >
+	</TextInput>
+
+
+	<ClientPanel>
+		<DockPanel>
+
+			<Rectangle Dock="Top" Color="Black" Height="80" Width="110%" >
+				<StackPanel Alignment="Center">
+					<Text Value="NOT ADD+1+NG UP" Alignment="Center" Font="lemonmilk" Color="White" FontSize="21" />
+				</StackPanel>
+			</Rectangle>
+
+			<PageControl>
+				<ListViewPage ux:Name="listviewpage" />
+				<DetailsViewPage ux:Name="detailsviewpage" />
+			</PageControl>
+
+		</DockPanel>
+	</ClientPanel>
+
+</App>

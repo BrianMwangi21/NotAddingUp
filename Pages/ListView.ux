@@ -1,0 +1,41 @@
+<Page ux:Class="ListViewPage" >
+	<Panel>
+		<DockPanel>
+				<ScrollView>
+					<StackPanel>
+						<Each Items="{data}" >
+							<Rectangle Height="100" Width="100%" Clicked="{selectTopic}" >
+								<Stroke Width="1" Color="Black" Alignment="Inside" />
+
+								<DockPanel>
+									<Panel Dock="Left">
+										<Rectangle Color="Black" Width="20" Layer="Background" />
+									</Panel>
+
+									<StackPanel Padding="15,10,0,0">
+										<Text Value="{nau_data}" Font="lemonmilk" FontSize="21" />
+										<Text Value="{nau_date}" Font="roboto" FontSize="10" />
+									</StackPanel>
+								</DockPanel>
+							</Rectangle>
+						</Each>		
+					</StackPanel>
+				</ScrollView>
+
+			<Rectangle Dock="Bottom" Color="Black" Height="70" Width="100%" >
+				<DockPanel>
+
+					<Panel Dock="Left" >
+						<MyTextInput Value="{save_new_nau}" PlaceholderText="What's new?" />
+					</Panel>
+
+					<Panel Dock="Right" >
+						<Rectangle Color="White" Layer="Background" Width="50" Height="50" Offset="-30,0" CornerRadius="30" Padding="10,10,10,10" Clicked="{savenew}">
+							<Image File="../Assets/saveicon.png" StretchMode="UniformToFill" Color="White" />
+						</Rectangle>
+					</Panel>
+				</DockPanel>
+			</Rectangle>
+		</DockPanel>
+	</Panel>
+</Page>
